@@ -22,10 +22,11 @@ public class Produto implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	
+
 	private String nome;
 	
 	private Double preco;
+	
 	
 	//Do outro lado da associação foi buscado os objetos (omite a lista de categorias para cada produto)
 	@JsonBackReference
